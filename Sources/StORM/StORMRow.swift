@@ -7,6 +7,7 @@
 //
 
 import PerfectLib
+import Foundation
 
 fileprivate enum idTypeList {
 	case String
@@ -21,7 +22,7 @@ open class StORMRow {
 	var idInt				= 0
 
 	/// The idUUID is the container for a UUID ID value.
-	var idUUID: UUID		= UUID()
+	var idUUID: Foundation.UUID		= Foundation.UUID()
 
 	/// The idString is the container for a textual ID value.
 	var idString			= ""
@@ -41,7 +42,7 @@ open class StORMRow {
 	}
 
 	/// Used to set the id value of the row if a UUID
-	public func id(_ val: UUID) {
+	public func id(_ val: Foundation.UUID) {
 		idType		= .UUID
 		idUUID		= val
 	}
