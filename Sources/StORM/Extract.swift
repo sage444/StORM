@@ -35,9 +35,9 @@ extension StORM {
 		// Process date
 		// Note this leverages SwiftMoment
 		// =======================================================================================
-		public static func date(_ data: [String: Any], _ name: String, _ def: Date? = Date()) -> Date? {
-			return moment(Extract.string(data, name)!)?.date ?? def
-		}
+//        public static func date(_ data: [String: Any], _ name: String, _ def: Date? = Date()) -> Date? {
+//            return moment(Extract.string(data, name)!)?.date ?? def
+//        }
 
 		// =======================================================================================
 		// Double

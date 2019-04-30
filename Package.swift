@@ -7,10 +7,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/PerfectlySoft/PerfectLib.git", from: "3.0.0"),
-        .package(url: "https://github.com/akosma/SwiftMoment.git", .branch("master")),
         .package(url: "https://github.com/flangel/SwiftString", from: "4.0.0"),
     ],
     targets: [
-        .target(name: "StORM", dependencies: ["PerfectLib", "SwiftMoment", "SwiftString"])
+        .target(name: "StORM", dependencies: ["PerfectLib", "SwiftString"])
     ]
 )
